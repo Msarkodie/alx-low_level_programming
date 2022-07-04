@@ -1,4 +1,4 @@
-include < stdio.h >
+#include <stdio.h>
 /**
  *  *main - print a num pair from but no repeats
  *  *Return: Always 0 (Success)
