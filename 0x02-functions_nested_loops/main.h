@@ -8,3 +8,10 @@
  */
 
 int _putchar(char c);
+
+
+/**
+ *  *prints the alphabets in lowercase
+ */
+void print_alphabet(void);
+
