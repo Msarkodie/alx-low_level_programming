@@ -29,7 +29,4 @@ int _islower(int c);
 /*
  * checks for alphabetic character
  */
-
-
-
-int _isalpha(int c)
+int _isalpha(int c);
