@@ -15,3 +15,8 @@ int _putchar(char c);
  */
 void print_alphabet(void);
 
+/**
+ * *prints the alpahbets in lower case 10 times
+ */
+void print_alphabet_x10(void);
+
