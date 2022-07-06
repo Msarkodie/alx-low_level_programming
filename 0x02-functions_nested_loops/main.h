@@ -34,7 +34,18 @@ int _isalpha(int c);
 /*
  * prints the sign of a number.
  */
+
 int print_sign(int n);
+
+
+
+
+/*
+ *  * prints the sign of a number.
+ *   */
+int _abs(int);
+
+
 
 /**
  *  * print_last_digit - print last digit of integer
