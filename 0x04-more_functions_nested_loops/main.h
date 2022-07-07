@@ -39,6 +39,11 @@ void print_numbers(void);
 void more_numbers(void);
 
 /**
+ * prints form 0 through 9 without 2 and 4
+ */
+void print_most_numbers(void);
+
+/**
  * draws a straight line in the termonal
  */
 void print_line(int n);
