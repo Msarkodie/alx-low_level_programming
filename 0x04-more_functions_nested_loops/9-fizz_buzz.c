@@ -29,7 +29,8 @@ int main(void)
 		{
 			printf("%i",counter);
 		}
-		printf(" ");
+		if (counter < 100)
+			printf(" ");
 	}
 	printf("\n");
 	return (0);
