@@ -18,13 +18,13 @@ void print_triangle(int size)
 		{
 			for (space = size - i; space > 0; space--)
 			{
-				_putchar(" ");
+				_putchar(' ');
 			}
-			_putchar("#");
+			_putchar('#');
 		}
 	}
 	else
 	{
-		_putchar("\n");
+		_putchar('\n');
 	}
 }
