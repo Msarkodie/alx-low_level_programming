@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio>
+#include <stdio.h>
 
 /**
  * main- used as the fizzbuzz test
@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	int counter
+	int counter;
 
 	for (counter = 1; counter <= 100; counter++)
 	{
@@ -27,10 +27,11 @@ int main(void)
 		}
 		else
 		{
-			printf(counter);
+			printf("%i",counter);
 		}
+		printf(" ");
 	}
-	printf('\n');
+	printf("\n");
 	return (0);
 }
 
