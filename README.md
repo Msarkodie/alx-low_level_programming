@@ -1,1 +1,1 @@
-A readme in the root of the repo
+README this is so informative
