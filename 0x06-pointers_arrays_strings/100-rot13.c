@@ -1,3 +1,10 @@
+/**
+ * rot13 - Exhibits the rot13 encoding
+ * @s: The string to be encoded
+ * Return: The encoded string
+ */
+
+
 char *rot13(char *s)
 {
 
@@ -15,7 +22,7 @@ char *rot13(char *s)
 
 	int i, j;
 
-	for (j = 0; s[j] != '\0'; j++) /*loop through string*/
+	for (j = 0; s[j] != '\0'; j++)
 	{
 		i = 0;
 		while (a[i] != '\0' && s[j] != a[i])
