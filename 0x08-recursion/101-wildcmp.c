@@ -26,6 +26,6 @@ int wildcmp(char *s1, char *s2)
 		}
 		if (s1[i] != s2[j])
 			return (0);
-		}
-		return (1);
+	}
+	return (1);
 }
