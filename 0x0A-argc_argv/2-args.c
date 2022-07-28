@@ -8,10 +8,9 @@
  *     * Return: 0 on success
  */
 
-int main(int argc, char *argv[] __attribute__((unused)))
+int main(int argc, char *argv[])
 {
-	if (argc > 0)
-	printf("%d\n", argc - 1);
-
+	while (argc--)
+		printf("%s\n", *argv++);
 	return (0);
 }
