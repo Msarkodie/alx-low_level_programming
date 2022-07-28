@@ -1,53 +1,53 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <stdbool.h>
-
+#include <string.h>
 /**
- *  * is_num - iterate through each argv to test if it's a number
- *   * @argvv: a argv
- *    * Return: true only if entire string is a number, false if not
- */
-
-bool is_num(char *argvv)
+ * * num_checker - checks if a given char is number or not
+ * * @a: char to be checked
+ * * Return: 1, if its a number, else 0
+ * **/
+int num_checker(char *a)
 {
-	int j = 0;
+	int i, num, len;
 
-	for (j = 0; argvv[j]; j++)
+	i = 0;
+	num = 0;
+	len = strlen(a);
+	while (i < len)
 	{
-		if (!(argvv[j] >= '0' && argvv[j] <= '9'))
-		return (0);
+		if (a[i] < '0' || a[i] > '9')
+		{
+			return (-1);
+		}
+		else
+			num = num * 10 + (a[i] - '0');
+		i++;
 	}
-	return (1);
+	return (num);
 }
 
 /**
- *  * main - print sum if all arguments given are numbers
- *   * @argc: argument counter
- *    * @argv: arguments
- *     * Return: 0 on success, 1 if an argument wasn't a number
- */
+ * * main - add positive numbers
+ * * @argc: arguement count
+ * * @argv: array of pointers to arguement strings
+ * * Return: result of addition or 1
+ * **/
 
 int main(int argc, char *argv[])
 {
-	int i = 1;
-	int sum = 0;
+	int i, num, sum;
 
-	if (argc == 1)
+	sum = 0;
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-		while (i < argc)
+		num = num_checker(argv[i]);
+		if (num == -1)
 		{
-			if (is_num(argv[i]))
-			sum += atoi(argv[i]);
-			else
-			{
-				printf("Error\n");
-				return (1);
-			}
-			i++;
+			printf("Error\n");
+			return (1);
 		}
-		printf("%d\n", sum);
-
-		return (0);
+		sum += num;
 	}
+	printf("%d\n", sum);
+	return (0);
+}
