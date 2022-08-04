@@ -1,20 +1,24 @@
 #include <stdlib.h>
-#include "function_pointer"
-#include <stddef.h>
-/* defines size_t */
+#include "function_pointers.h"
 
 /**
- *  * array_iterator - execute function on an array via a function ptr
- *   * @array: array
- *    * @size: size of array
- *     * @action: pointer to function that we need to execute
+ * * int_index - searches for an integer
+ * * @array: pointer to an array
+ * * @size: number of elements in array
+ * * @cmp: pointer to function
+ * * Return: index of the first element,on succes or  -1
  */
-
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	size_t i; /* match data type */
+	int i;
 
-	if (array != NULL && action != NULL)
-		for (i = 0; i < size; i++)
-			action(*(array + i));
+	if (size <= 0 || array == NULL || cmp == NULL)
+		return (-1);
+
+	for (i = 0; i < size; i++)
+	{
+		if (cmp(array[i]) != 0)
+			return (i);
+	}
+	return (-1);
 }
