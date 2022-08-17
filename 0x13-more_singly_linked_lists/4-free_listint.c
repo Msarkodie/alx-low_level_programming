@@ -16,16 +16,12 @@ void free_listint(listint_t *head)
 	}
 	listint_t *temp;
 
-	temp = head;
-
 	while (temp != NULL)
 	{
-		temp = temp->next;
+		temp = head;
+		head = head->next;
+		free(temp);
 	}
 
-	while (temp != head)
-	{
-		free(temp->next);
-	}
 	free(head);
 }
