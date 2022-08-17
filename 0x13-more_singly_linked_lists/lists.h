@@ -1,3 +1,6 @@
+#ifndef LINKEDLIST
+#define LINKEDLIST
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,3 +19,4 @@ typedef struct listint_s
 } listint_t;
 
 size_t print_listint(const listint_t *h);
+#endif
