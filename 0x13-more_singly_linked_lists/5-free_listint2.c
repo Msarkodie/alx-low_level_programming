@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 /**
- *  *free_listint- frees a linked list
+ *  *free_listint2- frees a linked list
  *   *@head: The list to be freed
  *    *Return:nothing
  */
@@ -16,7 +16,8 @@ void free_listint2(listint_t **head)
 	while (*head != NULL)
 	{
 		temp = *head;
-		*head = temp->next;
+		*head = *head->next;
 		free(temp);
 	}
+	*head == NULL;
 }
