@@ -5,7 +5,7 @@
 /**
  *free_listint- frees a linked list
  *@head: The list to be freed
- *Return: Returns nothing
+ *Return:nothing
  */
 
 void free_listint(listint_t *head)
