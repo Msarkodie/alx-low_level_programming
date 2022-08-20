@@ -15,15 +15,4 @@
 5. a function that returns the number of bits you would need to flip to get from one number to another
 6. a function that checks for big endian and little endian
 
-### Environment
-* Language: C
-* OS: Ubuntu 14.04 LTS
-* Compiler: gcc 4.8.4
-* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
----
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
-
-### License
- [![M](https://www.holbertonschool.com/holberton-logo-simple-200s.png)](https://www.holbertonschool.com)
