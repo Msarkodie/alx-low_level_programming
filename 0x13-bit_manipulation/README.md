@@ -1,12 +1,3 @@
-<<<<<<< HEAD
-A function that converts a binary number to an unsigned int.
-
-Prototype: unsigned int binary_to_uint(const char *b);
-where b is pointing to a string of 0 and 1 chars
-Return: the converted number, or 0 if
-there is one or more chars in the string b that is not 0 or 1
-b is NULL
-=======
 ## Bit Manipulation
 > Each file in this repository holds code that illustrates an essential concept of programming,
 > specific to the C programming language:
@@ -24,16 +15,4 @@ b is NULL
 5. a function that returns the number of bits you would need to flip to get from one number to another
 6. a function that checks for big endian and little endian
 
-### Environment
-* Language: C
-* OS: Ubuntu 14.04 LTS
-* Compiler: gcc 4.8.4
-* Style guidelines: [Betty style](https://github.com/holbertonschool/Betty/wiki)
 
----
-### Authors
-Melissa Ng [![M](https://upload.wikimedia.org/wikipedia/fr/thumb/c/c8/Twitter_Bird.svg/30px-Twitter_Bird.svg.png)](https://twitter.com/MelissaNg__)
-
-### License
- [![M](https://www.holbertonschool.com/holberton-logo-simple-200s.png)](https://www.holbertonschool.com)
->>>>>>> 1e511a7b45029006112be9b1ec3a4e71f8aa45e6
